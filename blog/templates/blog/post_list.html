@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Museum Studies Presentation</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="https://prezi.com/wqdzc1mdwbpg/national-center-for-civil-and-human-rights/?utm_campaign=share&utm_medium=copy">Museum Studies Presentation</a></h1>
+          
+        </div>
+
+        <div>
+           
+
+
+
+
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+        </div>
+    </body>
+</html>
+
